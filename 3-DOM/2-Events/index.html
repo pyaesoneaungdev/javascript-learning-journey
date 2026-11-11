@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>2-Events</title>
+  </head>
+  <body class="h-[300vh] p-10">
+    <!-- Box -->
+    <div id="box" class="m-10 border p-10">
+      <h1 class="text-2xl font-bold mb-2">Min Ga Lar Par</h1>
+      <p class="mb-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+        necessitatibus minima sed animi doloremque nostrum, mollitia eius, enim
+        officiis explicabo temporibus eligendi asperiores ipsa quis vero, est
+        dolores. Eos, id?
+      </p>
+      <div class="mb-5">
+        <input type="text" id="textInput" class="border" />
+        <button class="bg-black text-white text-sm py-1 px-2">Click Me</button>
+      </div>
+      <div class="mb-5">
+        <select id="nation" class="border" name="nation">
+          <option value="usa">United States</option>
+          <option value="japan">Japan</option>
+          <option value="france">France</option>
+          <option value="thailand">Thailand</option>
+          <option value="brazil">Brazil</option>
+        </select>
+      </div>
+
+      <div class="mb-5">
+        <input class="border" type="file" id="myFile" name="myFile" />
+      </div>
+    </div>
+    
+    <!-- form -->
+    <div
+      class="bg-gradient-to-br from-blue-50 to-blue-100 min-h-screen flex items-center justify-center"
+    >
+      <form
+        id="regForm"
+        class="bg-white shadow-xl rounded-2xl w-full max-w-lg p-8 space-y-6 border border-gray-200"
+      >
+        <h2 class="text-3xl font-semibold text-gray-800 text-center">
+          Register
+        </h2>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Full Name</label
+          >
+          <input
+            type="text"
+            name="name"
+            placeholder="e.g. John Doe"
+            class="w-full px-4 py-2 border rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Date of Birth</label
+          >
+          <input
+            type="date"
+            name="dob"
+            class="w-full px-4 py-2 border rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Email Address</label
+          >
+          <input
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+            class="w-full px-4 py-2 border rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+            required
+          />
+        </div>
+
+        <div>
+          <span class="block text-sm font-medium text-gray-700 mb-2"
+            >Gender</span
+          >
+          <div class="flex gap-4">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="radio"
+                name="gender"
+                value="male"
+                class="accent-blue-500"
+                required
+              />
+              <span>Male</span>
+            </label>
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="radio"
+                name="gender"
+                value="female"
+                class="accent-pink-500"
+                required
+              />
+              <span>Female</span>
+            </label>
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="radio"
+                name="gender"
+                value="other"
+                class="accent-gray-500"
+                required
+              />
+              <span>Other</span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Nationality</label
+          >
+          <select
+            name="nationality"
+            class="w-full px-4 py-2 border rounded-xl shadow-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+            required
+          >
+            <option value="">-- Select Nationality --</option>
+            <option value="mm">Myanmar</option>
+            <option value="th">Thailand</option>
+            <option value="vn">Vietnam</option>
+            <option value="ph">Philippines</option>
+            <option value="id">Indonesia</option>
+          </select>
+        </div>
+
+        <div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white font-semibold py-3 rounded-xl shadow-md hover:bg-blue-700 transition duration-300 ease-in-out"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- advanced events -->
+
+    <div class="p-10 border-4 w-full" id="div-a">
+      <div class="p-10 border-4 w-full" id="div-b">
+        <div class="p-10 border-4 w-full" id="div-c">
+          <div class="p-10 border-4 w-full" id="div-d">
+            <p id="text" class="bg-black text-white text-center p-3">
+              Hello Par
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
